@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE-edge"/>
+	<meta name="viewport" content="width=device-width, intial-scale=1.0"/>
+	<title> quiz! </title>
+	
+	 <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+	<script defer src="main-3.js"></script>
+	<link href="https://fonts.googleapis.com/css2?family=Jua&family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
+   
+	<style type="text/css">
+		html{font-family: 'Nanum Gothic';}
+
+		* {margin: 0; padding:0;}
+
+    body {background-image: url(background.png); background-repeat: no-repeat;background-size: cover; }
+
+		li {list-style: none;}
+
+		.title-container {text-align: center; margin-top: 100px;}
+
+		.slide-container {width: 1024px; height: 400px; margin: 0 auto; overflow: hidden;}
+
+		.swiper-slide { width: 100%; height: 100%; display: flex; justify-content: center; align-items: center; }
+
+		.result-tip {width: 100px; height: 150px; background-color: white; position: absolute; top: 110px; left: -50px; visibility: hidden;}
+
+		.result-container {width: 300px; background-color: white; text-align: center; font-size: 18px; padding: 30px 0; position: absolute;top: 50%; left: 50%; transform: translate(-50%,-20%); cursor: pointer;visibility: hidden;}
+
+		.result {width: 50px; background-color: black; color: white; border-radius: 5px; margin : 0 auto; margin-top: 10px; padding: 5px;}
+
+		.result-tip {width: 100px; height: 150px; background-color: lightyellow; position: absolute; top: 110px; left: -50px; visibility: hidden;}
+
+    .title1 {padding-bottom: 10px;}
+
+
+		.quiz {width: 300px; height: 300px; background-color: #FBE1E1; box-sizing: border-box; padding:20px; position: relative; } 
+		.quiz2 {background-color: #D1DFF2;}
+		.quiz3 {background-color: #BBEFD4;}
+		.quiz4 {background-color: #DEC1E5;}
+		.quiz4 {background-color: #FFD797;}
+
+		.quiz-title {text-align: center; padding: 10px 0;}
+
+		.quiz-list {width: 100%; padding-top: 50px;}
+
+		.list {width: 100%; font-size: 18px; text-align: center; padding: 10px 0; cursor: pointer;}
+
+		.list:hover {font-weight: bold;}
+
+		.blue{color: blue;}
+
+		.red {color: red;}
+		
+
+	</style>
+</head>
+
+<body>
+	
+     <header class="title-container">
+      <h1 class="title1">3단계</h1>
+      <h2 class="title2">한국인들도 잘 모르는 맞춤법</h2>
+    </header>
+    <!-- Swiper -->
+    <div class="swiper-container slide-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide slide1">
+          <div class="quiz quiz1">
+            <h2 class="quiz-title">
+              '간간이'와 '간간히' 중<br />뭐가 맞는 말일까?
+            </h2>
+            <ul class="quiz-list">
+              <li class="list success">1. 간간이 연락하자.</li>
+              <li class="list fail">2. 간간히 연락하자.</li>
+            </ul>
+            <div class="result-container">
+            
+            </div>
+            <div class="result-tip">첩어와<br>준첩어의<br>명사 뒤에는<br>'-이'가 와요!</div>
+          </div>
+        </div>
+        <div class="swiper-slide slide2">
+          <div class="quiz quiz2">
+          	<h2 class="quiz-title">
+              '인사말'과 '인삿말' 중<br />뭐가 맞는 말일까?
+            </h2>
+            <ul class="quiz-list">
+              <li class="list success">1. 따뜻한 인사말을 건네요.</li>
+              <li class="list fail">2. 따뜻한 인삿말을 건네요.</li>
+            </ul>
+            <div class="result-container">
+            
+            </div>
+            <div class="result-tip">'돼요' 는<br>'되어요' 의<br>줄임말입니다.<br>'되요'라는<br>말은<br>존재하지<br>않아요!<br>헷갈린다면<br>'돼'는 '해'로,<br> '되'는 '하'로<br> 대신 넣어<br>생각해보세요.</div>
+          </div>
+        </div>
+        <div class="swiper-slide slide3">
+          <div class="quiz quiz3">
+          	<h2 class="quiz-title">
+              '건드리다'와 '건들이다' 중<br />뭐가 맞는 말일까?
+            </h2>
+            <ul class="quiz-list">
+              <li class="list success">1. 내 물건 건드리지 마!</li>
+              <li class="list fail">2. 내 물건 건들이지 마!</li>
+            </ul>
+            <div class="result-container">
+            
+            </div>
+             <div class="result-tip">'건들이다' 는<br>'건드리다' 의<br>잘못된<br>표현입니다.</div>
+          </div>
+        </div>
+      </div>
+      <!-- Add Pagination -->
+      <div class="swiper-pagination"></div>
+    </div>
+			    
+		
+</body>
+</html>

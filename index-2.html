@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE-edge"/>
+	<meta name="viewport" content="width=device-width, intial-scale=1.0"/>
+	<title> quiz! </title>
+	
+	 <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+	<script defer src="main-2.js"></script>
+	<link href="https://fonts.googleapis.com/css2?family=Jua&family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
+   
+	<style type="text/css">
+		html{font-family: 'Nanum Gothic';}
+
+		* {margin: 0; padding:0;}
+
+    body {background-image: url(background.png); background-repeat: no-repeat;background-size: cover; }
+
+		li {list-style: none;}
+
+		.title-container {text-align: center; margin-top: 100px;}
+
+		.slide-container {width: 1024px; height: 400px; margin: 0 auto; overflow: hidden;}
+
+		.swiper-slide { width: 100%; height: 100%; display: flex; justify-content: center; align-items: center; }
+
+		.result-tip {width: 100px; height: 150px; background-color: white; position: absolute; top: 110px; left: -50px; visibility: hidden;}
+
+		.result-container {width: 300px; background-color: white; text-align: center; font-size: 18px; padding: 30px 0; position: absolute;top: 50%; left: 50%; transform: translate(-50%,-20%); cursor: pointer;visibility: hidden;}
+
+		.result {width: 50px; background-color: black; color: white; border-radius: 5px; margin : 0 auto; margin-top: 10px; padding: 5px;}
+
+		.result-tip {width: 100px; height: 150px; background-color: lightyellow; position: absolute; top: 110px; left: -50px; visibility: hidden;}
+
+    .title1 {padding-bottom: 10px;}
+
+		.quiz {width: 300px; height: 300px; background-color: #FBE1E1; box-sizing: border-box; padding:20px; position: relative; } 
+		.quiz2 {background-color: #D1DFF2;}
+		.quiz3 {background-color: #BBEFD4;}
+		.quiz4 {background-color: #DEC1E5;}
+		.quiz4 {background-color: #FFD797;}
+
+		.quiz-title {text-align: center; padding: 10px 0;}
+
+		.quiz-list {width: 100%; padding-top: 50px;}
+
+		.list {width: 100%; font-size: 18px; text-align: center; padding: 10px 0; cursor: pointer;}
+
+		.list:hover {font-weight: bold;}
+
+		.blue{color: blue;}
+
+		.red {color: red;}
+		
+
+	</style>
+</head>
+
+<body>
+	
+     <header class="title-container">
+      <h1 class="title1">2단계</h1>
+      <h2 class="title2">너도 나도 헷갈리는 단어들</h2>
+    </header>
+    <!-- Swiper -->
+    <div class="swiper-container slide-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide slide1">
+          <div class="quiz quiz1">
+            <h2 class="quiz-title">
+              '그러든지'와 '그러던지' 중<br />뭐가 맞는 말일까?
+            </h2>
+            <ul class="quiz-list">
+              <li class="list success">1. 그러든지, 말든지.</li>
+              <li class="list fail">2. 그러던지, 말던지.</li>
+            </ul>
+            <div class="result-container">
+            
+            </div>
+            <div class="result-tip">'-던' 은<br>과거 회상을<br>할 때 쓰는<br>표현입니다.</div>
+          </div>
+        </div>
+        <div class="swiper-slide slide2">
+          <div class="quiz quiz2">
+          	<h2 class="quiz-title">
+              '아니에요'와 '아니예요' 중<br />뭐가 맞는 말일까?
+            </h2>
+            <ul class="quiz-list">
+              <li class="list success">1. 아니에요, 괜찮아요.</li>
+              <li class="list fail">2. 아니예요, 괜찮아요.</li>
+            </ul>
+            <div class="result-container">
+            
+            </div>
+            <div class="result-tip">'예요' 는<br>'-이에요' 의<br>줄임말!<br>'아니이에요'라고<br>하지 않으니까요!</div>
+          </div>
+        </div>
+        <div class="swiper-slide slide3">
+          <div class="quiz quiz3">
+          	<h2 class="quiz-title">
+              '붙이다'과 '붙히다' 중<br />뭐가 맞는 말일까?
+            </h2>
+            <ul class="quiz-list">
+              <li class="list success">1. 벽에 포스터 좀 붙여줘.</li>
+              <li class="list fail">2. 벽에 포스터 좀 붙혀줘.</li>
+            </ul>
+            <div class="result-container">
+            
+            </div>
+            <div class="result-tip">'붙히다' 라는<br>표현은<br>존재하지<br>않아요!</div>
+          </div>
+        </div>
+      </div>
+      <!-- Add Pagination -->
+      <div class="swiper-pagination"></div>
+    </div>
+			    
+		
+</body>
+</html>
